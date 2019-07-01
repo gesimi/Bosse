@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bosse die Katze">
+    <meta name="keywords" content="Katze, Kater, web blog Katze, web blog Kater">
+	<link rel="icon" href="logo.png" type="image/png" />
+    <title>Bosse die Waldkatze</title>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a tabindex="0" aria-current="page">Startseite</a></li>
+        <li><a href="html/bosse.html">Über mich</a></li>
+        <li><a href="html/photos.html">Fotos</a></li>
+		<li><a href="html/videos.html">Videos</a></li>
+		<li><a href="html/facts.html">Katzen-Fakten</a></li>
+		<li><a href="html/humans.html">Über meine Menschen</a></li>
+      </ul>
+    </nav>
+    <header id="homeheader">
+    	 <h1> Miau, ich bin der Bosse </h1>
+    	 <img src="img/IMAG1875.jpg" alt="Katze" width="200">
+    </header>
+	<main id="homemain">	 
+	  <p>
+	
+	  </p> 
+	  <h2>Möchstest du etwas über mich wissen oder magst du Bilder von mir sehen?</h2>	  
+		  <ul>
+			<li> <a href="html/bosse.html">Über mich</a> </li>
+			<li> <a href="html/photos.html">Photos</a> </li>
+			<li> <a href="html/videos.html">Videos</a> </li>	
+		  </ul>
+
+	  <br>
+	  <hr>
+	  <br>
+	  <form id="mainform" action="process.php">
+	  	<div>
+	  		<label>Name</label>
+	  		<input type="text" name="name" placeholder="Namen eingeben">
+			<label>Nachricht</label>
+	  		<textarea name="nachricht" placeholder="Nachricht eingeben"></textarea>
+	  		<br>
+	  		<input type="submit" name="submit" value="Absenden">
+	  	</div>
+	  </form>
+
+	  <br>
+	  <div id="scripttest">
+		  <button type="button" onclick="Datetest()">Click me to display Date and Time.</button>
+			<p id="test"></p>
+	  </div>
+
+	  <div id="showinnerwindow">
+			<button onclick="getInnerWindow()">InnerWindow</button>
+			<p id="demo"></p>				
+	  </div>
+
+	  <div id="randomFact">
+	  	<button onclick="getRandomFact()">Zufälliger Fakt</button>
+	  	<p id="textfact"></p>
+	  </div>
+
+	</main>
+	<footer>
+		<hr>
+		<p>Copyright &copy</p> 
+	</footer>
+
+	<script src="main.js"></script>
+
+  </body>
+</html>

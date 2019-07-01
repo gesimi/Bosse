@@ -1,0 +1,255 @@
+/* NAV */
+nav ul {
+	font: bold 1.25em Comic Sans MS;
+	list-style-type: none;
+
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	/*border: 1px solid;*/
+	border-bottom: .25em solid;
+	border-radius: .25em;
+	border-image-source: linear-gradient(42deg, transparent, blue);
+	border-image-slice: 1;
+
+	padding: 1em;
+	margin: 0;
+	
+	background-color: #b9e6ff;
+		
+	color: red;		/*  nur rot markiert, welche Seite aktiv, wegen Vererbung an anchor. anchor tabindex 0 oder aria current sind untergeordnet (kein blau für link)  */
+  	
+}
+
+nav li a {
+  text-decoration: none;	/* li a ansprechen über ul nicht möglich? nein, und das ist gut so und logisch*/
+  margin: 1em;
+  padding: 1em;
+  border-radius: .2em;
+
+}
+
+@media only screen and (max-width: 1220px) {
+
+	nav li a {
+	  text-decoration: none;	
+	  margin: .25em;
+	  padding: .25em;
+	  border-radius: .2em;
+
+	}
+}
+
+nav li a:focus {
+	background-color: blue;
+	color: green;
+}
+
+nav li a:visited {
+	color:transparent;
+}
+
+nav li a:hover {
+	background-image: linear-gradient(42deg, transparent, blue);
+	color: red;
+}
+
+/*test
+nav li a:hover {
+	background-image: url(../test.png);
+	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+*/
+
+/*test2
+nav li a:hover {
+	background-image: url(../logo.png);
+	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color:green;
+}
+*/
+
+
+/*Paragraphen*/
+p { font-size: 1.2em; }
+
+/*Submit button*/
+input[type="submit"]{
+	background-color: #000;
+	color: #fff;
+	padding: 0.5em;
+	margin: 1em;
+	border:none;
+}
+
+/*Homepage Header*/
+#homeheader{
+	background-image: url("../img/IMAG1875.jpg");
+	background-repeat: no-repeat;
+	background-color: #ccc;
+	justify-content: center;
+	text-align: center;
+	font: italic 1.1em Comic Sans MS;
+}
+
+#homeheader h1{
+	margin-top: 0;
+}
+/* Homepage */ 
+#homemain {
+	background-image: url("../img/IMAG1900.jpg");
+	background-repeat: no-repeat;
+	background-color: #ccc;
+	background-size: cover;
+	height: 900px;
+ }
+
+/*Scripttest*/
+#scripttest {
+	position: relative;
+	bottom: -100px;
+	color: red;
+}
+
+/*Anzeige*/
+#showinnerwindow {
+	position: fixed;
+	padding: 1em;
+	right: 0;
+	top: 300px;
+}
+
+#showinnerwindow p {
+	position: fixed;
+	padding: 1em;
+	right: 0;
+	top: 310px;
+	color: red;
+	font-size: 1.2em;
+}
+
+#showinnerwindow button {
+	padding: .5em;
+	color: red;
+}
+
+
+/*Mainform Test*/
+#mainform {
+	display:block;
+	background-color: #b3f0ff;
+	border-radius: 5px;
+	width: 20%;
+	min-width: 150px;
+	margin: 3em;
+	padding: 1em .5em;
+}
+
+#mainform label{
+	font: normal 1.1em Comic Sans MS;
+}
+
+#mainform input[type="text"], #mainform textarea{
+	display:block;
+	border-radius: 5px;
+	width:80%;
+	padding: .25em;
+}
+
+/*RandomFact*/
+#randomFact {
+	margin: auto;
+	width: 30%;
+	text-align: center;
+	font: bold 1.2em Arial;
+}
+
+@media only screen and (max-width: 700px) {
+	#randomFact {
+	margin: auto;
+	width: 90%;
+	text-align: center;
+	font: bold 1.2em Arial;
+	}
+}
+
+
+/*Bosse*/
+
+
+
+/* Fotos*/
+#photomain {
+	background-color: #aaa;
+}
+/*grid test
+#photomain {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 5px;
+	
+	text-align: center;
+	
+	max-width: 200px; ja im code, wird überschrieben von images?
+*/
+
+.gallery{
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.gallery:hover{
+	border: 1px solid #777;
+}
+
+.gallery img{
+	width:100%;
+	height: auto;
+}
+
+.beschreibung {
+	font: normal 1em Comic Sans MS;
+	color: black;
+	padding: .25em;
+	text-align: center;
+}
+
+.responsive {
+	padding: 6px;
+	float: left;
+	width: 24.99999%; 
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .beschreibung {
+  	font-size: .9em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+   .beschreibung {
+  	font-size: .9em;
+  }
+}
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: table;
+}
